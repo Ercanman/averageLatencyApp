@@ -1,0 +1,6 @@
+@AverageLatencyApplication_HostAddress = http://localhost:5129
+
+GET {{AverageLatencyApplication_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

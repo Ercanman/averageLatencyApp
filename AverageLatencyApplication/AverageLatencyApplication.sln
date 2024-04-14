@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AverageLatencyApplication", "AverageLatencyApplication.csproj", "{4CCFA9FA-6426-4E09-B9E7-322478325CE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AverageLatencyApplicationTests", "..\AverageLatencyApplicationTests\AverageLatencyApplicationTests.csproj", "{8E470ECD-CEAA-47AB-8EBC-6353DF1AFB7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CCFA9FA-6426-4E09-B9E7-322478325CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CCFA9FA-6426-4E09-B9E7-322478325CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CCFA9FA-6426-4E09-B9E7-322478325CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CCFA9FA-6426-4E09-B9E7-322478325CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E470ECD-CEAA-47AB-8EBC-6353DF1AFB7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E470ECD-CEAA-47AB-8EBC-6353DF1AFB7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E470ECD-CEAA-47AB-8EBC-6353DF1AFB7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E470ECD-CEAA-47AB-8EBC-6353DF1AFB7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54080154-A714-43AD-BDCA-1F6B7EE12A80}
+	EndGlobalSection
+EndGlobal
