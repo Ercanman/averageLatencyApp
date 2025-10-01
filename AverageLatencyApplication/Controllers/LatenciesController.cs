@@ -26,20 +26,18 @@ namespace AverageLatencyApplication.Controllers
 
             var validationResult = validator.Validate(new DateDto(startDate, endDate));
 
-            if(!validationResult.IsValid)
+            if (!validationResult.IsValid)
             {
                 return StatusCode(400, validationResult.Errors.Select(x => x.ErrorMessage));
             }
 
-            try
-            {
-                var result = await _latenciesService.GetAverageLatenciesForPeriod(DateTime.Parse(startDate), DateTime.Parse(endDate));
-                return Ok(result);
-            }
-            catch (Exception)
-            {
-                return StatusCode(500);
-            }
+            var parsedStartDate = DateTime.Parse(startDate);
+            var parsedEndDate = DateTime.Parse(endDate);
+
+            var result = await _latenciesService.GetAverageLatenciesForPeriod(parsedStartDate, parsedEndDate);
+            _logger.LogInformation("Retrieved average latencies for range {StartDate} - {EndDate}", parsedStartDate, parsedEndDate);
+
+            return Ok(result);
         }
     }
 }
